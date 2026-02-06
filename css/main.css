@@ -1,0 +1,15 @@
+.thumbnails {
+    --height: 150px;
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    font-size: 12pt;
+}
+h1 {
+    font-size: 2.5rem;
+    margin: .5rem 0;
+    line-height: 1.1;
+    font-weight: normal;
+}
