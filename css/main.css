@@ -7,7 +7,7 @@ html {
     font-weight: normal;
     font-size: 12pt;
     --textwhite: #fff;
-    --bgblack: #000;
+    --bgblack: #00000080;
 }
 h1 {
     font-size: 2.5rem;
@@ -21,12 +21,52 @@ h1 {
     object-fit: cover;
     object-position: center;
 }
+.info{
+    position: relative;
+}
 .picture{
     margin: 0;
+}
+.picture__link{
+    display: block;
+    
+
 }
 .info__text{
     color: var(--textwhite);
     background-color: var(--bgblack);
     font-weight: bold;
     padding: 1em 0.5em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+}
+
+.info:hover .info__text{
+    display: block;
+}
+
+.info::before{
+    content: "i";
+    display: block;
+    font-size: 2em;
+    background-color: #404000;
+    color: #ffff0025;
+    border-style: solid;
+    height: 1.2em;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0.5em;
+    text-align: center;
+    line-height: 1em;
+
+
+}
+.info:hover::before{
+    color: yellow;
 }
